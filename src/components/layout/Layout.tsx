@@ -77,7 +77,7 @@ export function Layout({ children, fullPage = false }: LayoutProps) {
       `}</style>
       {/* Centered container for header + gallery */}
       <div
-        className="flex flex-col gap-6 sm:gap-8 lg:gap-[50px] pointer-events-auto pt-[80px] sm:pt-[100px] md:pt-0"
+        className="flex flex-col gap-6 sm:gap-8 lg:gap-[50px] pointer-events-auto pt-6 sm:pt-[100px] md:pt-0"
         style={{
           gridColumn: "content-start / content-end",
           gridRow: "2",
