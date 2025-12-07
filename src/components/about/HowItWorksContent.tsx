@@ -1,5 +1,3 @@
-import { Mail, Phone } from 'lucide-react';
-
 export function HowItWorksContent() {
   return (
     <div className="py-8 sm:py-12">
@@ -69,46 +67,24 @@ export function HowItWorksContent() {
                 </p>
               </section>
             </div>
-
-            {/* Contact Information Section */}
-            <section className="border-t border-gray-200 pt-6 sm:pt-8 mt-auto">
-              <h2 className="text-lg sm:text-xl lg:text-[1.75rem] leading-tight font-serif font-bold text-foreground mb-4 sm:mb-6">
-                Contáctanos
-              </h2>
-              <div className="space-y-3 sm:space-y-4">
-                <div className="flex items-center gap-3">
-                  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 flex-shrink-0" />
-                  <a
-                    href="mailto:hello@behuman.ai"
-                    className="text-sm sm:text-base lg:text-[1.0625rem] leading-snug text-gray-700 hover:text-foreground transition-colors"
-                  >
-                    hello@behuman.ai
-                  </a>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 flex-shrink-0" />
-                  <a
-                    href="tel:+525555550187"
-                    className="text-sm sm:text-base lg:text-[1.0625rem] leading-snug text-gray-700 hover:text-foreground transition-colors"
-                  >
-                    +52 (55) 5555-0187
-                  </a>
-                </div>
-              </div>
-              <p className="mt-4 sm:mt-6 text-xs sm:text-sm lg:text-[0.9375rem] leading-relaxed text-gray-500">
-                Disponible para demos, implementaciones empresariales y proyectos de bienestar organizacional.
-              </p>
-            </section>
           </div>
 
-          {/* Right Column - Image (40% = 2/5) */}
+          {/* Right Column - Image with overlay text (40% = 2/5) */}
           <div className="lg:col-span-2">
-            <img
-              src="https://images.pexels.com/photos/11052798/pexels-photo-11052798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt="Behuman - Plataforma de bienestar emocional"
-              className="w-full h-auto rounded-sm shadow-sm"
-              loading="eager"
-            />
+            <div className="relative overflow-hidden rounded-3xl">
+              <img
+                src="https://images.pexels.com/photos/11052798/pexels-photo-11052798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Behuman - Plataforma de bienestar emocional"
+                className="w-full h-auto"
+                loading="eager"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6">
+                <p className="text-xl sm:text-2xl lg:text-3xl text-white/50 font-medium leading-tight">
+                  Crea Humanos que viven en internet, con identidad, en menos de dos minutos.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
