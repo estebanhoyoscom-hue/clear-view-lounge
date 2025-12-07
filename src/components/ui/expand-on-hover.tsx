@@ -111,9 +111,9 @@ const HoverExpand_001 = ({
               onClick={() => setActiveImage(index)}
             >
               <img src={image.src} className="size-full object-cover" alt={image.alt} />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-2xl text-white/60 font-medium leading-tight text-right">{image.code}</p>
+                <p className="text-sm text-white/90 font-medium">{image.code}</p>
               </div>
             </motion.div>
           ))}
@@ -168,12 +168,19 @@ const HoverExpand_001 = ({
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="absolute flex h-full w-full flex-col items-end justify-end p-6"
+                      className="absolute h-full w-full bg-gradient-to-t from-black/40 to-transparent"
+                    />
+                  )}
+                </AnimatePresence>
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="absolute flex h-full w-full flex-col items-end justify-end p-4"
                     >
-                      <p className="text-3xl font-medium leading-tight text-right text-white/50 max-w-[90%]">
-                        {image.code}
-                      </p>
+                      <p className="text-left text-xs text-white/50">{image.code}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
