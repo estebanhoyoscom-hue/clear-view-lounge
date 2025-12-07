@@ -162,19 +162,21 @@ const HoverExpand_001 = ({
                 onClick={() => setActiveImage(index)}
                 onHoverStart={() => setActiveImage(index)}
               >
-                {/* Gradient overlay - always visible */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-                
-                {/* Text - always visible, opacity changes on active */}
-                <motion.div
-                  animate={{ opacity: isActive ? 1 : 0.5 }}
-                  transition={{ duration: 0.3 }}
-                  className="absolute flex h-full w-full flex-col items-end justify-end p-6"
-                >
-                  <p className="text-3xl font-medium leading-tight text-right text-white/50 max-w-[90%]">
-                    {image.code}
-                  </p>
-                </motion.div>
+                <AnimatePresence>
+                  {isActive && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="absolute flex h-full w-full flex-col items-end justify-end p-6"
+                    >
+                      <p className="text-3xl font-medium leading-tight text-right text-white/50 max-w-[90%]">
+                        {image.code}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
                 <img src={image.src} className="size-full object-cover" alt={image.alt} />
               </motion.div>
             );
