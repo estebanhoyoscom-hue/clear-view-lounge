@@ -80,7 +80,7 @@ export function HowItWorksContent() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6">
-                <p className="text-xl sm:text-2xl lg:text-3xl text-white/50 font-medium leading-tight">
+                <p className="text-xl sm:text-2xl lg:text-3xl text-white/50 font-medium leading-tight text-right">
                   Crea Humanos que viven en internet, con identidad, en menos de dos minutos.
                 </p>
               </div>
