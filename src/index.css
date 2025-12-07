@@ -100,6 +100,7 @@ All colors MUST be HSL.
   /* Typography - Warm & Friendly Photography Portfolio */
   --font-serif: 'Hind', sans-serif;                 /* Clean, legible sans from Google Fonts */
   --font-sans: 'Poppins', system-ui, sans-serif;    /* Geometric, friendly sans from Google Fonts */
+  --font-display: 'Playfair Display', serif;        /* Elegant display font for testimonials */
   
   /* Typography Scale */
   --text-large-title: 2.125rem;       /* 34px - Photographer Name */
@@ -258,4 +259,8 @@ All colors MUST be HSL.
 
 .font-sans {
   font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
 }
