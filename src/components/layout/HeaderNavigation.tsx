@@ -163,12 +163,20 @@ export function HeaderNavigation() {
         </div>
 
         {/* Auth Buttons */}
-        <div className="flex flex-col items-end gap-1 text-sm lg:text-[0.9375rem] text-muted-foreground">
-          <button className="hover:text-foreground transition-colors py-1">
+        <div className="flex flex-col items-end gap-1 text-sm lg:text-[0.9375rem]">
+          <button 
+            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1"
+            style={{ color: 'hsl(25, 90%, 55%)' }}
+          >
             Iniciar sesión
+            <span>→</span>
           </button>
-          <button className="hover:text-foreground transition-colors py-1">
+          <button 
+            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1"
+            style={{ color: 'hsl(25, 90%, 55%)' }}
+          >
             Registrarse
+            <span>→</span>
           </button>
         </div>
       </div>
