@@ -103,7 +103,7 @@ export function HeaderNavigation() {
           </button>
           <button 
             className="italic text-base font-medium transition-opacity hover:opacity-70 flex items-center gap-1"
-            style={{ color: 'hsl(25, 90%, 55%)', textShadow: '0 1px 2px rgba(0,0,0,0.8)' }}
+            style={{ color: 'hsl(25, 90%, 55%)' }}
           >
             Registrarse
             <span className="text-sm">→</span>
