@@ -88,17 +88,23 @@ export function HeaderNavigation() {
           </Sheet>
         </div>
 
-        {/* Row 2: Tagline */}
-        <p className="text-lg text-muted-foreground mt-4 leading-relaxed">
+        {/* Row 2: Tagline - Subtitle style */}
+        <h2 className="text-xl font-bold text-foreground mt-6 text-center leading-snug px-2">
           Humanos digitales para cuidar el bienestar de tus colaboradores. Aumenta la productividad, baja la rotación, crece el ROI.
-        </p>
+        </h2>
 
-        {/* Row 3: Auth buttons */}
-        <div className="flex gap-6 mt-4 text-lg font-medium" style={{ color: 'hsl(25, 90%, 55%)' }}>
-          <button className="hover:opacity-70 transition-opacity">
+        {/* Row 3: Auth buttons with outline */}
+        <div className="flex gap-4 mt-6 justify-center">
+          <button 
+            className="px-6 py-2.5 text-base font-semibold rounded-full border-2 transition-all hover:bg-[hsl(25,90%,55%)] hover:text-white"
+            style={{ borderColor: 'hsl(25, 90%, 55%)', color: 'hsl(25, 90%, 55%)' }}
+          >
             Iniciar sesión
           </button>
-          <button className="hover:opacity-70 transition-opacity">
+          <button 
+            className="px-6 py-2.5 text-base font-semibold rounded-full border-2 transition-all hover:bg-[hsl(25,90%,55%)] hover:text-white"
+            style={{ borderColor: 'hsl(25, 90%, 55%)', color: 'hsl(25, 90%, 55%)' }}
+          >
             Registrarse
           </button>
         </div>
