@@ -180,7 +180,7 @@ const HoverExpand_001 = ({
                       exit={{ opacity: 0 }}
                       className="absolute flex h-full w-full flex-col items-end justify-end p-4"
                     >
-                      <p className="text-left text-3xl text-white/90 font-medium">{image.code}</p>
+                      <p className="text-left text-3xl text-white/50">{image.code}</p>
                     </motion.div>
                   )}
                 </AnimatePresence>
