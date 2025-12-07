@@ -113,7 +113,7 @@ const HoverExpand_001 = ({
               <img src={image.src} className="size-full object-cover" alt={image.alt} />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="font-display text-2xl text-white/60 font-medium leading-tight text-left">{image.code}</p>
+                <p className="font-display text-2xl text-white/60 font-medium leading-tight text-right">{image.code}</p>
               </div>
             </motion.div>
           ))}
@@ -169,10 +169,10 @@ const HoverExpand_001 = ({
                 <motion.div
                   animate={{ opacity: isActive ? 1 : 0.5 }}
                   transition={{ duration: 0.3 }}
-                  className="absolute flex h-full w-full flex-col items-start justify-end p-6"
+                  className="absolute flex h-full w-full flex-col items-end justify-end p-6"
                 >
                   <p 
-                    className="font-display text-3xl font-medium leading-tight text-left max-w-[90%]"
+                    className="font-display text-3xl font-medium leading-tight text-right max-w-[90%]"
                     style={{ color: isActive ? 'rgba(255,255,255,0.95)' : 'rgba(255,255,255,0.5)' }}
                   >
                     {image.code}
