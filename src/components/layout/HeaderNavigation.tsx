@@ -165,14 +165,14 @@ export function HeaderNavigation() {
         {/* Auth Buttons */}
         <div className="flex flex-col items-end gap-1 text-sm lg:text-[0.9375rem]">
           <button 
-            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1"
+            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1 italic"
             style={{ color: 'hsl(25, 90%, 55%)' }}
           >
             Iniciar sesión
             <span>→</span>
           </button>
           <button 
-            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1"
+            className="hover:opacity-70 transition-opacity py-1 flex items-center gap-1 italic"
             style={{ color: 'hsl(25, 90%, 55%)' }}
           >
             Registrarse
