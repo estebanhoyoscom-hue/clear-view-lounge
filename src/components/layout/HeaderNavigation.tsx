@@ -82,25 +82,19 @@ export function HeaderNavigation() {
                             : "font-normal text-muted-foreground hover:text-gray-700"
                         }`}
                       >
-                        About
+                        ¿Cómo funciona?
                       </Link>
                     </li>
 
-                    {/* Contact info in mobile menu */}
+                    {/* Auth buttons in mobile menu */}
                     <li className="mt-8 pt-6 border-t">
-                      <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-                        <a
-                          href={`mailto:${photographer.contact.email}`}
-                          className="hover:text-foreground transition-colors"
-                        >
-                          e: {photographer.contact.email}
-                        </a>
-                        <a
-                          href={`tel:${photographer.contact.phone}`}
-                          className="hover:text-foreground transition-colors"
-                        >
-                          m: {photographer.contact.phone}
-                        </a>
+                      <div className="flex flex-col gap-3">
+                        <button className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left">
+                          Iniciar sesión
+                        </button>
+                        <button className="text-sm text-muted-foreground hover:text-foreground transition-colors text-left">
+                          Registrarse
+                        </button>
                       </div>
                     </li>
                   </ul>
@@ -135,7 +129,7 @@ export function HeaderNavigation() {
                       : "font-normal text-muted-foreground hover:text-gray-700"
                   }`}
                 >
-                  About
+                  ¿Cómo funciona?
                 </Link>
               </li>
             </ul>
@@ -146,14 +140,14 @@ export function HeaderNavigation() {
             Humanos digitales para cuidar el bienestar de tus colaboradores. Aumenta la productividad, baja la rotación, crece el ROI.
           </p>
         </div>
-        {/* Contact Info - Tablet/Desktop Only */}
+        {/* Auth Buttons - Tablet/Desktop Only */}
         <div className="hidden md:flex flex-col items-end gap-1 text-sm lg:text-[0.9375rem] text-muted-foreground">
-          <a href={`mailto:${photographer.contact.email}`} className="hover:text-foreground transition-colors py-1">
-            e: {photographer.contact.email}
-          </a>
-          <a href={`tel:${photographer.contact.phone}`} className="hover:text-foreground transition-colors py-1">
-            m: {photographer.contact.phone}
-          </a>
+          <button className="hover:text-foreground transition-colors py-1">
+            Iniciar sesión
+          </button>
+          <button className="hover:text-foreground transition-colors py-1">
+            Registrarse
+          </button>
         </div>
       </div>
 
