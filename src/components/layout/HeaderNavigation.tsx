@@ -28,9 +28,9 @@ export function HeaderNavigation() {
       {/* Mobile Layout */}
       <div className="sm:hidden">
         {/* Row 1: Logo + Title | Hamburger */}
-        <div className="flex items-center justify-between mb-3">
-          <Link to="/" className="flex-shrink-0 flex items-center gap-2">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 flex-shrink-0">
+        <div className="flex items-center justify-between">
+          <Link to="/" className="flex-shrink-0 flex items-center gap-3">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 flex-shrink-0">
               <path d="M50 5 C55 5, 65 20, 70 30 C75 40, 90 45, 95 50 C90 55, 75 60, 70 70 C65 80, 55 95, 50 95 C45 95, 35 80, 30 70 C25 60, 10 55, 5 50 C10 45, 25 40, 30 30 C35 20, 45 5, 50 5 Z" fill="hsl(25, 90%, 55%)"/>
             </svg>
             <h1 className="font-sans text-2xl leading-tight font-bold tracking-tight text-foreground hover:opacity-80 transition-opacity">
@@ -89,16 +89,16 @@ export function HeaderNavigation() {
         </div>
 
         {/* Row 2: Tagline */}
-        <p className="text-sm text-muted-foreground mb-3">
+        <p className="text-sm text-muted-foreground mt-2">
           Humanos digitales para cuidar el bienestar de tus colaboradores. Aumenta la productividad, baja la rotación, crece el ROI.
         </p>
 
         {/* Row 3: Auth buttons */}
-        <div className="flex gap-4 text-sm text-muted-foreground">
-          <button className="hover:text-foreground transition-colors">
+        <div className="flex gap-4 mt-3 text-sm font-medium" style={{ color: 'hsl(25, 90%, 55%)' }}>
+          <button className="hover:opacity-70 transition-opacity">
             Iniciar sesión
           </button>
-          <button className="hover:text-foreground transition-colors">
+          <button className="hover:opacity-70 transition-opacity">
             Registrarse
           </button>
         </div>
