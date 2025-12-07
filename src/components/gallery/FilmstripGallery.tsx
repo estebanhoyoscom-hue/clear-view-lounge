@@ -8,7 +8,7 @@ export function FilmstripGallery({ images, className = '' }: FilmstripGalleryPro
   const transformedImages = images.map((image) => ({
     src: image.src,
     alt: image.alt,
-    code: `${image.metadata.title} - ${image.metadata.year}`,
+    code: image.metadata.title,
   }));
 
   if (images.length === 0) {
