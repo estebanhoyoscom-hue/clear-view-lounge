@@ -38,10 +38,6 @@ export function HeaderNavigation() {
             </h1>
           </Link>
 
-          {/* Tagline */}
-          <p className="text-sm sm:text-base text-muted-foreground max-w-md mt-1 hidden sm:block">
-            Humanos digitales para cuidar el bienestar de tus colaboradores. Aumenta la productividad, baja la rotación, crece el ROI.
-          </p>
 
           {/* Mobile: Hamburger Menu */}
           <div className="sm:hidden">
@@ -144,6 +140,11 @@ export function HeaderNavigation() {
               </li>
             </ul>
           </nav>
+
+          {/* Tagline */}
+          <p className="text-sm sm:text-base text-muted-foreground max-w-xl mt-3">
+            Humanos digitales para cuidar el bienestar de tus colaboradores. Aumenta la productividad, baja la rotación, crece el ROI.
+          </p>
         </div>
         {/* Contact Info - Tablet/Desktop Only */}
         <div className="hidden md:flex flex-col items-end gap-1 text-sm lg:text-[0.9375rem] text-muted-foreground">
